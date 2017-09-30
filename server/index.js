@@ -7,4 +7,6 @@ app.get('/*',(req, res) => {
 	res.send('!hello');
 });
 
-app.listen(3000, () => console.log('running on localhost:3000'))
+const PORT_NUMBER = 3000;
+
+app.listen(PORT_NUMBER, () => console.log('running on localhost:', PORT_NUMBER))
