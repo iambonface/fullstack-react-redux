@@ -1,10 +1,12 @@
 import express from 'express';
 
+import path from 'path';
+
 let app = express();
 
 
 app.get('/*',(req, res) => {
-	res.send('!hello');
+	res.sendFile(path.join(__dirname, './index.html'));
 });
 
 const PORT_NUMBER = 3000;
